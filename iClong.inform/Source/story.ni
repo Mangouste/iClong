@@ -15,7 +15,7 @@ Part 1 General Rules
 Chapter 1 General rules
 
 A staircase is a kind of door. A staircase is usually open. A staircase is seldom openable.
-Instead of climbing a staircase: 
+Instead of climbing a staircase:
     try entering the noun.
 
 Understand "help" or "hint" or "hints" or "about" or "info" as asking for help.
@@ -192,7 +192,7 @@ The appartment is a region.
 
 Chapter 3 Views
 
-The land view is a backdrop in the Outer Castle. It is not scenery. The initial appearance of the land view is "As far as you can see, the landscape is nothing more than some woods and rocks, stretching miles in every directions. ". The description of the land view is "Time does not seem to make such a view any less dazzling.".
+The land view is a backdrop in the Outer Castle. It is not scenery. The initial appearance of the land view is "As far as you can see, the landscape is nothing more than some woods and rocks, stretching miles in every directions. ". The description of the land view is "Time does not seem to make such a view any less dazzling."
 
 Chapter 4 Home
 
@@ -214,7 +214,7 @@ A pink cellphone is in the small bedroom. "[if not handled]On the night table, y
 The pink cellphone is a phone.
 The description of the pink cellphone is "[the name of your fiancée]'s cellphone. You could swear it still has her sweet smell."
 
-The Tiny Bathroom is east of the Small Bedroom. "As usual, you feel uncomfortable in your bathroom. Who wouldn't in a room with black tiles on all its walls. Ok, maybe it's dark dark blue, but still; the last owner must have had a price on an unsold lot. Nobody's here except from ducky, your yellow plastic bath duck. The only way out of this weird place is west." It is in Appartment. A little rubber duck is in the Tiny Bathroom. "Your bathing partner since you were old enough to bathe on your own. It hardly looks like a grown up duck and the sound that it used to make is now barely more than choking rattle."
+The Tiny Bathroom is east of the Small Bedroom. "As usual, you feel uncomfortable in your bathroom. Who wouldn't in a room with all its walls of black tiles? Ok, maybe it's dark dark blue, but still; the last owner must have had a price on an unsold lot. Nobody's here except from ducky, your yellow rubber duck. The only way out of this weird place is west." It is in Appartment. A little rubber duck is in the Tiny Bathroom. "Your bathing partner since you were old enough to bathe on your own. It hardly looks like a grown up duck and the sound that it used to make is now barely more than choking rattle."
 Before taking the rubber duck: say "You just know that it won't be of any help accomplishing anything but there are things you can't resist doing."
 
 The Small Living Room is east of the Small Kitchen. "[if unvisited]As you get into the living room, you notice that one of your four chairs lay toppled at the side of the table. Something is wrong, you can tell it. Thieves? Are they still here? You sense your muscles tensing as adrenaline flows in your veins. [end if]However familiar the Living room might be, there is still something about it that makes your worst fears creep into your mind. The kitchen is to the west, the toilets are south, and a door leads east to the office." It is in Appartment.
@@ -233,7 +233,7 @@ Chapter 5 Castle
 
 Section 1 Drawbridge Tower
 
-Front of the castle is a room in the Outer Castle. "You stand here, in front of this imposing castle."
+Front of the castle is a room in the Outer Castle. "You stand here, in front of this imposing castle. [if unvisited]The trip here has exhausted you and you already regret your warm appartment, but you MUST find your finacée."
 
 The Entrance Antechamber is north of Front of the castle. "You are at the base of the drawbrige tower, the main entrance of the castle. The high-roofed corridor leads north to the courtyard, and stairs ascend to the upper levels." It is in the Drawbridge Tower.
 
@@ -259,20 +259,21 @@ The Courtyard - North West is a room in the Courtyard, north of Courtyard - Sout
 
 The Courtyard - North East is a room in the Courtyard, north of Courtyard - South East. "You are in the castle's courtyard; in the North East part." Southwest from Courtyard - North East is the Courtyard - South West.
 
-Section 3 Minor Buildings
+Section 3 Lesser Buildings
 
 The Stable is a room. "The room is ill lighted by several small windows, and by the two-part door. The ground is completely covered in . It looks like an old stable."
 
 The Chapel is a room. "The Chapel is small, with only six rows of benches. You feel something holy in it."
 There is an altar. The description is "The marble table is clean, and seems to have been used not so long ago." A candle is on the altar.
 
-The screw driver, the hammer and the rusted sword are things.
-East from Courtyard - North East is the Old workshop. The Old workshop is a room. "You are standing in an old building migth have been a workshop or a warehouse, but now it is only a ruin with a lot of tools and junks stored here."  The stored tools are here. The description is "Examining the tools you found a screw driver, a hammer and, behind some junks, a short rusted sword."
+The screw driver, the pincers, the hammer and the rusted sword are things.
+East from Courtyard - North East is the Old workshop. The Old workshop is a room. "You are standing in an old building migth have been a workshop or a warehouse, but now it is only a ruin with a lot of tools and junks stored here."  The stored tools are here. The description is "Examining the tools you found a screw driver, a hammer and, behind some junks, a short rusted sword." The stored tools are fixed in place. The indefinite article of the stored tools is "some".
 After examining the stored tools:
-now the screw driver is in the Old workshop;
-now the hammer is in the Old workshop;
-now the  rusted sword is in the Old workshop;
-remove the stored tools from play.
+	now the screw driver is in the Old workshop;
+	now the hammer is in the Old workshop;
+	now the pincers are in the Old workshop;
+	now the  rusted sword is in the Old workshop;
+	remove the stored tools from play.
 
 East from Courtyard - South East is the Stone house. The description of the Stone house is "You are in a small one-piece house"
 
@@ -305,7 +306,7 @@ Move the Mpawn to the Mcell;
 say "The Wicked taste of raki fils your mouth as you wake up. It was realy foolish of you to drink that in a place you don't know."
 
 
-The Wardrobe is east of the Dungeon Hall. "The wall of the room were covered in clothes. All of them are men clothes. You can see vests, scarves, and hats hung on the walls but also shoes on ground. Behind a mantle, on the eastern wall, you can see a door."  It is in the Main Keep.
+The Wardrobe is east of the Dungeon Hall. "The walls of the room were covered in clothes. All of them are men clothes. You can see vests, scarves, and hats hung on the walls but also shoes on ground. Behind a mantle, on the eastern wall, you can see a door."  It is in the Main Keep.
 
 
 
