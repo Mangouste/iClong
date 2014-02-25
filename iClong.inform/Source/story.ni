@@ -177,8 +177,20 @@ Instead of Calling Ellen:
 Section 5 Specific characters
 
 A mobster is a kind of person.
+The lazy mobster is a mobster. The lazy mobster can be knocked out, watching TV or alert. The lazy mobster is in the Mobster's living room. The lazy mobster is watching TV.
 
-Every turn when a hostile person can see the player (this is the Qui a Vu Verra rule): say "Ennemy spotted!!"
+[If the the TV set is not working:
+	If the wire is cut:
+		Say "You hear the Mobster downstairs mumbling about the reception of his TV set.";
+		Now the lazy mobster is in the dungeon 2nd floor.]
+
+[If a hostile person can see the player (this is the Qui a Vu Verra rule):
+	say "You must attack now, or he will get you";
+	instead of doing anything except attacking:
+		Say "You must attack now!"
+	Instead of attacking the mobster:
+		Say "You knock him out.";]
+
 
 Chapter 2 Regions
 
@@ -312,6 +324,18 @@ The Wardrobe is east of the Dungeon Hall. "The walls of the room were covered in
 
 The Dungeon 1st floor is up of the Hall. "You are in the dungeon."  It is in the Main Keep.
 
+The Dungeon 2nd floor is up of the Dungeon 1st floor. "The walls around you are decorated by dozens of hunting trophies and and the few narrow windows show you more of the castle. It does not look as big from up here, but you still marvel at how hard it would have been to warm it up through the worst of winter. A wire runs up the wall and through the ceiling." It is in the Main Keep.
+A coaxial wire is here. "A coaxial wire runs all the way from the floor to the ceiling against the west wall. [If the coaxial wire is intact] This must be the antena cable for the TV you hear in the living room underneath.[Else] It has been cut." The coaxial wire can be either cut or intact.
+
+The Mobster's living room is north of the Dungeon 1st floor. "You enter the comfortable living room. You can see the remnants of typical mob's day-to-day activities on the table and heavy tapestries hanging from the walls."
+The TV set is a device in the Mobster's living room. The TV set can be either working or not working. The TV set is working and switched on.
+The TV chatter is a backdrop in the Main Keep. It is not scenery. The initial appearance of the TV chatter is "[if the TV set is working and the tv set is switched on]From where you are, you distincively hear the chatter of the TV. I seems that a soccer game is playing.[else if the TV set is not working and the tv set is switched on]Even from here you can hear the high scritching of the TV with bad reception.[else]". The description of the TV chatter is "description of the chatter."
+The TV chatter is in the Courtyard - North West, the Courtyard - North East, the Dungeon Hall, the Dungeon 1st floor, the Mobster's living room, the stairs in the wall upper part, the Dungeon 2nd floor.
+
+Chapter 6 Underground
+
+The stairs in the wall upper part is east of the Mobster's living room.
+
 Part 3 Plot
 
 Chapter 1 Metaphoric location
@@ -424,6 +448,58 @@ Situation	Said	Message
 "rubber duck"	0	"What are you doing with this freaking plastic duck?"
 
 Chapter 3 Plot Rules
+
+Section 1 Action
+
+Instead of cutting the coaxial wire:
+	if the wire is intact:
+		if the player carries the pincers:
+			say "You cut the cable with the pincers you found in the workshop.";
+			Now the TV set is not working;
+			Now the wire is cut;
+			Say "You now hear the mobster downstairs complaining about the poor reception and slapping at the back of his flat TV screen. After tens of minutes of useless spanking, he storms of to the stairs headed to your direction... ";
+			Now the lazy mobster is in the dungeon 2nd floor;
+			Wait for any key;
+			Let the weapon of choice be a random object carried by the player;
+			Say "[paragraph break]Out of panic, you brandish your [weapon of choice] ready to attack[if the weapon of choice is not the sword] but you soon realise it is as futile as pissing on the fires of Hell[end if]. When the silhouette appears at the top of the stairs, you just charge with all your might.[paragraph break]The mobster dodges the blade awkwardly, but doing so, he tumbles back down the stairs with the grace of an antelope climbing a tree. Forced by your momentum, you follow him like a louse on that same antelope.[paragraph break]You both end up on the ground at the bottom of the stairs, at the difference that he is limp and you are just bruised.";
+			Now the lazy mobster is in the dungeon 1st floor;
+			Now the player is in the dungeon 1st floor;
+			Now the present health of the lazy mobster is 0;
+			Now the status of the lazy mobster is "This once agressive-looking mobster is now as dead as anyone can be.";
+			Say "You would need some tools to do that.";
+		else if the player carries the rusted sword:
+			say "You savagely hack at the poor cable and finally manage to cut it off.";
+			Now the TV set is not working;
+			Now the wire is cut;
+			Say "You now hear the mobster downstairs complaining about the poor reception and slapping at the back of his flat TV screen. After tens of minutes of useless spanking, he storms of to the stairs headed to your direction... ";
+			Now the lazy mobster is in the dungeon 2nd floor;
+			Wait for any key;
+			Say "[paragraph break]Out of panic, you brandish the sword you had kept in your hand, ready to attack. When the silhouette appears at the top of the stairs, you just charge with all your might.[paragraph break]The mobster dodges the blade awkwardly, but doing so, he tumbles back down the stairs with the grace of an antelope climbing a tree. Forced by your momentum, you follow him like a louse on that same antelope.[paragraph break]You both end up on the ground at the bottom of the stairs, at the difference that he is limp and you are just bruised.";
+			Now the lazy mobster is in the dungeon 1st floor;
+			Now the player is in the dungeon 1st floor;
+			Now the present health of the lazy mobster is 0;
+			Now the status of the lazy mobster is "This once agressive-looking mobster is now as dead as anyone can be.";
+		else:
+			Say "You would need some tools to do that.";
+	else:
+		say "Someone already did that."
+Instead of calling fiancée:
+	If the player carries the pink cellphone:
+		Say "Just before you make the call, you remember you have her phone. Since she has a very loud ringtone, this would attract a lot of attention to you and you dare not complete the call...";
+	If the pink cellphone is in the bedroom:
+		Say "Noone answers";
+	Else if the pink cellphone is in the courtyard:
+		If the player is not in the dungeon 2nd floor:
+			Say "You dare not make that call until you are certain you can surprise the mobster. He certainly come down the stairs to see what's happening and you'll want the advantage of height if it comes to fighting";
+		If the player is in the Dungeon 2nd floor and the lazy mobster is in the Mobster's living room:
+			Say "Now is your chance. After a quick prayer, you complete the call and hear the ringtone [The name of your fiancée] chose. You feel a flush of anger discovering it is the Teletubbies song, and you brandish your cellphone, rushing down the stairs in a devastating fury. The mobster, intrigued by the ringing phone in the courtyard was descending the stairs and you crash against his back, hitting him with you black cellphone. He hits the wall, the stone steps, and finally the floor of the dungeon hall, dislocating his shoulder, braking bothknees, a hip, three ribs, and his massive neck. That plus bruise on the back of his head inflicted by your hit with the phone. He is limp and probably dead, and you have not a scratch since you landed on his comfortable mass.";
+			Now the player is in the Dungeon hall;
+			Now the lazy mobster is in the dungeon hall;
+			Now the present health of the lazy mobster is 0;
+			Now the status of the lazy mobster is "This once agressive-looking mobster is now as dead as anyone can be.";
+	
+			
+Section 2 Scenes chaining
 
 When play begins: now the player is in the elevator.
 
