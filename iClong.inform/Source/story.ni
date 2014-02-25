@@ -40,6 +40,7 @@ Section 2 Fiancée
 Your fiancée is a woman.
 A first name is a kind of value. The first names are Margaret, Rosemary, Elisabeth and Jennifer.
 A woman has a first name called name.
+Calling fiancée is an action applying to nothing. Understand "call your finacée" or "call fiancée" as calling fiancée.
 
 [Understand [the name of your fiancée] as your fiancée.]
 [Her name is [the name of your fiancée], [a random swearing]!".]
@@ -51,26 +52,66 @@ The player has a text called status1. The player has a text called status2. The 
 When play begins, change the status of the player to "Pretty good".
 A phone is a kind of device.
 The black cellphone is a phone carried by the player. Instead of examining cellphone: say "You have some battery left. Maybe you could try to call your best friend Ed(not available yet), or [the name of your fiancée]'s best friend and coworker Ellen."
+Instead of dropping the black cellphone: say "This is the last thing that allows you to comunicate with your allies out there, and you dare not leave it behind."
 
 Section 4 Ed
 
 Africa is a room.
-Ed is a person. Ed is in Africa.
+Ed is a person in Africa.
 
-Ed has a text called the give time message. Ed has a text called the discovery message. Ed has a number called the TTD. Ed has a number called the call count.
+Ed has a text called the give time message. Ed has a text called the discovery message. Ed has a number called the TTD. Ed has a number called the call count. Ed has a number called next TTD.
 When play begins:
-	now the TTD of Ed is 1;
-	now the give time message of Ed is "You have to give me some more time, bro..."
+	now the discovery message of Ed is the give time message of Ed.
 Every turn:
 	Let x be the TTD of Ed;
-	If x is at least 1:
+	If x is at least 2:
 		Decrement the TTD of Ed;
-	If the TTD of Ed is 0:
-		Now the discovery message of Ed is "message changé";
+	If the TTD of Ed is 1:
+		If Disparition is happening:
+			Let K be the call count of Ed;
+			Choose row K in the Table of Ed's Disparition Messages;
+			Now the discovery message of Ed is Discovery entry;
+			Now the next TTD of Ed is Next TTD entry;
+		If the Irish Castle is happening:
+			Let K be the call count of Ed;
+			Choose row K in the Table of Ed's Castle Messages;
+			Now the discovery message of Ed is Discovery entry;
+			Now the next TTD of Ed is Next TTD entry;
+		If Under the World is happening:
+			Let K be the call count of Ed;
+			Choose row K in the Table of Ed's Under the World Messages;
+			Now the discovery message of Ed is Discovery entry;
+			Now the next TTD of Ed is Next TTD entry;
+		Decrement the TTD of Ed.
 
 Calling Ed is an action applying to nothing. Understand "call Ed" as Calling Ed.
 
-Instead of Calling Ed: say "ring!!!"
+Instead of Calling Ed:
+	if the player carries the cellphone:
+		let contmess be a number;
+		now contmess is 0;
+		if the player carries the little rubber duck:
+			choose the row with a situation of "rubber duck" in the table of Ed's Contextual Messages;
+			if the said entry is 0:
+				say "[the message entry]";
+				now the said entry is 1;
+				now contmess is 1;
+		if the player is in the Chapel:
+			choose the row with a situation of "Chapel" in the table of Ed's Contextual Messages;
+			if the said entry is 0:
+				say "[the message entry]";
+				now the said entry is 1;
+				now contmess is 1;
+		if contmess is 0:
+			If the TTD of Ed is 0:
+				Say "[the discovery message of Ed]";
+				Increment the call count of Ed;
+				now the discovery message of Ed is "I don't think I can help you any more, you will have to figure it out all by yourself...";
+			else:
+				say "[the give time message of Ed]";
+			Now the TTD of Ed is next TTD of Ed;
+	Otherwise:
+		say "You have no phone. You could try speaking very loud but you fear they won't hear you from afar.".
 
 Section 5 Ellen
 
@@ -95,6 +136,11 @@ Every turn:
 			Choose row K in the Table of Ellen's Castle Messages;
 			Now the discovery message of Ellen is Discovery entry;
 			Now the next TTD of Ellen is Next TTD entry;
+		If Under the World is happening:
+			Let K be the call count of Ellen;
+			Choose row K in the Table of Ellen's Under the World Messages;
+			Now the discovery message of Ellen is Discovery entry;
+			Now the next TTD of Ellen is Next TTD entry;
 		Decrement the TTD of Ellen.
 
 Calling Ellen is an action applying to nothing. Understand "call Ellen" as Calling Ellen.
@@ -109,8 +155,8 @@ Instead of Calling Ellen:
 				say "[the message entry]";
 				now the said entry is 1;
 				now contmess is 1;
-		if the player is in the small kitchen:
-			choose the row with a situation of "small kitchen" in the table of Ellen's Contextual Messages;
+		if the player is in the Chapel:
+			choose the row with a situation of "Chapel" in the table of Ellen's Contextual Messages;
 			if the said entry is 0:
 				say "[the message entry]";
 				now the said entry is 1;
@@ -282,7 +328,10 @@ Disparition is a scene. Disparition begins when play begins. Disparition ends wh
 When disparition begins:
 	now the TTD of Ellen is 1;
 	now the call count of Ellen is 1;
-	now the give time message of Ellen is "Listen, I'm at work right now, so could you call me back in a sec?".
+	now the give time message of Ellen is "Listen, I'm at work right now, so could you call me back in a sec?";
+	now the TTD of Ed is 1;
+	now the call count of Ed is 1;
+	now the give time message of Ed is "Listen, I'm at work right now, so could you call me back in a sec?";
 
 Table of Ellen's Disparition Messages
 CC	Next TTD	Discovery
@@ -290,19 +339,60 @@ CC	Next TTD	Discovery
 2	4	"-Listen, Ellen, I'm sorry to bother you again but it doesn't seem normal for her to be gone like this. Can you help me find some clues ?"
 3	0	"Third and last message"
 
+Table of Ed's Disparition Messages
+CC	Next TTD	Discovery
+1	3	"You call your best friend, Ed.[paragraph break]-Hey how are you?[paragraph break]-Do you happen to know where [the name of your fiancée] might be? She should be home, but I can't find her and the appartment is a mess, I'm starting to worry...[paragraph break]-You watch to many movies, bro! I'm sure she just left for some shopping...[paragraph break]-Mmmhh... Thank you, Ellen.[paragraph break]-Bye!!"
+2	4	"-Listen, Ellen, I'm sorry to bother you again but it doesn't seem normal for her to be gone like this. Can you help me find some clues ?"
+3	0	"Third and last message"
+
+
 Section 2 Irish Castle
 
-Irish Castle is a scene. Irish Castle begins when Disparition ends.
+Irish Castle is a scene. Irish Castle begins when Disparition ends. The Irish Castle ends when player is in the stairs in the wall upper part.
 When Irish Castle begins:
 	now the TTD of Ellen is 1;
 	now the call count of Ellen is 1;
-	now the give time message of Ellen is "Could you call me back in a sec, I'm driving right now...".
+	now the give time message of Ellen is "Could you call me back in a sec, I'm driving right now...";
+	now the TTD of Ed is 1;
+	now the call count of Ed is 1;
+	now the give time message of Ed is "Hey it's Ed, I'm in a skirmish right now, call again later";
 
 Table of Ellen's Castle Messages
 CC	Next TTD	Discovery
-1	3	"-How much do you know about Irish castles? -I know a bunch..."
+1	3	"-Hey Hellen! How much do you know about Irish castles? -I know a bunch! I was able to recover some of the books [the name of your fiancée] has been working on, so i'll reseach it while ou go..."
 2	4	"-This castle is not known for its passageways. "
-3	0	"-You're an architect, you'll figure it out by yourself..."
+3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
+
+Table of Ed's Castle Messages
+CC	Next TTD	Discovery
+1	3	"-Hey Hellen! How much do you know about Irish castles? -I know a bunch! I was able to recover some of the books [the name of your fiancée] has been working on, so i'll reseach it while ou go..."
+2	4	"-This castle is not known for its passageways. "
+3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
+
+Section 3 Under the World
+
+Under the World is a scene. Under the world begins when play begins.
+When Under the World begins:
+	now the TTD of Ellen is 1;
+	now the call count of Ellen is 1;
+	now the give time message of Ellen is "Could you call me back in a sec, I'm driving right now...";
+	now the TTD of Ed is 1;
+	now the call count of Ed is 1;
+	now the give time message of Ed is "I have no time for that right now";
+
+Table of Ellen's Under the World Messages
+CC	Next TTD	Discovery
+1	3	"You dit it, you found the entrance of a secret passageway. It being at the first floor of the keep and through stairs in the wall is clearly un heard of!!! This is so exciting!!..."
+2	4	"-This castle is not known for its passageways. "
+3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
+
+Table of Ed's Under the World Messages
+CC	Next TTD	Discovery
+1	3	"Yeah you found the secret passage and so what?"
+2	4	"Man up, bitch! "
+3	0	"What do you think I do for a living? Fucking flies?"
+
+
 
 Section 3 Time in the brink
 
@@ -326,7 +416,7 @@ Section 4 Contextual Messages
 Table of Ellen's Contextual Messages
 Situation	Said	Message
 "rubber duck"	0	"What are you doing with this freaking plastic duck?"
-"small kitchen"	0	"You are in the your appartment's kitchen that's great!!!"
+"Chapel"	0	"This must be the chapel of the castle. It was and remains considered a holy place. You could find something interesting here but... Well what struck me with this castle is thet it is rather unusual, and those chapels were not uncommon in castles at the time, this is why I suggest you look for more unusual locations if you want to find something interesting."
 
 Table of Ed's Contextual Messages
 Situation	Said	Message
