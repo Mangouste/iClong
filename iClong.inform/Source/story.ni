@@ -519,3 +519,4 @@ Chapter 4 Easter Eggs
 20-127ing is an action out of world. Understand "20", "127", "20-127", "Echo" and "Echo 20-127" as 20-127ing.
 Report of 20-127ing:
 	say "You seem to hear a distand whisper coming from nowhere... it goes 'Physsssss...', then vanishes again just as it came."
+	

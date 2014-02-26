@@ -3,12 +3,39 @@
 
 ## Ne pas hésiter à le bidouiller, on pourra suivre grâce au versionnement.
 
+## Etats:	On peut mettre plusieurs tags.
+	Non prévu	(Une idée en l'air)
+	Validé		(Ca a l'air d'une bonne idée)
+	Refusé		(Bof, laisse tomber)
+	Conflit		(C'est incompatible avec tel truc)
+	Prévu		(Ouais, on va s'y mettre bientôt)
+	Bloqué		(Nécessite d'autres implementations pour aller plus loin)
+	Obsolete	(On peut s'en passer, maintenant)
+	En cours	(J'ai commencé à bosser dessus)
+	Buggé		(J'ai commencé, mais ca fout la merde)
+	A supprimer	(On a fait ça, mais en fait il faut le virer)
+	Opérationnel	(Ca fonctionne)
+	A étoffer	(L'état minimal existe, mais il faut arrondir les angles)
+	Fini		(C'est bon, on passe à autre chose)
+
 ###------------------------------------------------------###
 ### 			Scénario			 ###
 ###======================================================###
 
-
-
++++ The Dying mobster
++++	Où:	A l'entrée du souterrain.
++++	Etat:	Non prévu 
+Un mobster salement blessé [par ce qui se cache dans les sous-sols]
+s'est trainé jusqu'à la la grille [qui ferme le souterrain].
+Quand le player arrive à son niveau, il est sur le point de mourir.
+Le player peut décider de le soigner pour obtenir des infos de sa part.
+Le player a alors le choix entre des infos sur la localisation de la fiancée
+ou sur ce qui se cache dans les sous-sols.
+Une fois une de ces infos obtenues, le mobster meurt (sois pas dèg').
+NB: les infos sur la fiancée ne sont pas indispensables, car c'est assez évidant
+	qu'elle est au fond.
+>>> Nécessite l'implémentation et le placement de bandages
+>>> Nécessite l'implémentation de menus.
 
 ###------------------------------------------------------###
 ### 			  Puzzle			 ###
@@ -21,10 +48,28 @@
 ###======================================================###
 
 +++ Bricolage d'objets
-+++ Etat:	Non prévu
++++	Etat:	Non prévu
 Le joueur peut fabriquer ou assembler des objets
+
+
+
++++ Menus
++++	Etat:	Non prévu 
+Le joueur peut choisir entre quelques options.
+Cf. Extention d'Emily Short
+<<< Permet "SCENAR: The dying mobster" (entre autres)
 
 
 ###------------------------------------------------------###
 ### 			  Divers			 ###
 ###======================================================###
+
++++ Bandages
++++	Etat:	Non prévu 
+Un objet qui permet de se soigner [Gagner 1pv?], ou de soigner les PNJs.
+Use bandage -> "You use a bandage on yourself, and feel already better."
+Use bandage on mobster	-> "You apply the bandage on the mobster. That's all that you can do for him."
+Usage unique.
+<<< Permet "SCENAR: The dying mobster"
+
+
