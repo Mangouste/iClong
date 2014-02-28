@@ -37,11 +37,29 @@ NB: les infos sur la fiancée ne sont pas indispensables, car c'est assez évida
 >>> Nécessite l'implémentation et le placement de bandages
 >>> Nécessite l'implémentation de menus.
 
+
++++ Echo of a conversation
++++	Où:	Au début des souterrains
++++	Etat:	Non prévu 
+On entend des mobsters discuter dans un couloir, leurs propos
+apportés par l'écho du corridor.
+Ils apportent quelques infos sur le Boss: Giovanni.
+
 ###------------------------------------------------------###
 ### 			  Puzzle			 ###
 ###======================================================###
 
++++ Master of lockpicking
++++	Etat:	Non prévu
+Une porte est vérouillée et ne peut être ouverte qu'en la crochetant.
+Le joueur devra trouver des outils pour ça. Du fil de fer?
+Une épingle à nourisse? Une baleine de soutien-gorge? Un clou rouillé?
+*** Compatible avec le "Bricolage d'objets"
 
++++ Trickster's echo
++++	Etat:	Non prévu
+Le joueur utilise l'écho pour attirer les mobs/faire diversion/effrayer
+>>> Nécessite l'implémentation de l'echo
 
 ###------------------------------------------------------###
 ### 			  Features			 ###
@@ -52,12 +70,18 @@ NB: les infos sur la fiancée ne sont pas indispensables, car c'est assez évida
 Le joueur peut fabriquer ou assembler des objets
 
 
-
 +++ Menus
 +++	Etat:	Non prévu 
 Le joueur peut choisir entre quelques options.
 Cf. Extention d'Emily Short
 <<< Permet "SCENAR: The dying mobster" (entre autres)
+
+
++++ Echo
++++	Etat: Non prévu
+Certain bruits sont répercutés d'une pièce à une autre.
+Le joueur peut délibérément créer un écho.
+<<< Permet "PUZZLE: Trickster's echo" (entre autres)
 
 
 ###------------------------------------------------------###
