@@ -1,0 +1,44 @@
+### Ce fichier est destiné à lister les bugs connus, leur
+### état, leurs causes, etc.
+
+###------------------------------------------------------###
+### 			    BUGS			 ###
+###======================================================###
+
++++ Cellphones
++++	Etat:	A identifier, important
++++	Où: Sur le toit de la drawbridge tower, mais potentiellement partout.
+Call Ellen twice to get the message about the secret passageway!!!
++++ Commentaires:
+	Je pense que le pb vient du fait que "Under the World scene" commence
+	dès le début du jeu.
+
+
+
++++ Prison break
++++	Etat:	A corriger, mineur
++++	Où: Improvised cell.
+Pas d'indication de la direction de la porte de la cellule.
+
+
+
++++ Razzia
++++	Etat:	A voir, mineur
+Quand take all les objets du big chest, on ne prend pas Ducky en dernier.
+Du coup, il balance la description:
+	"You just know that it won't be of any help accomplishing anything but there are things you can't resist doing.
+
+	Taken."
+Avant de finir la liste des objets ramassés.
+Weird...
+
+
++++ Persuasion
++++	Etat:	A identifier, important
++++	Où: Sur le toit de la drawbridge tower.
+>'Mobster, go down' -> 'The sniping mobster goes down.'
++++ Commentaires:
+	Il doit y avoir des règles pour réguler la "persuasion".
+	NB: Y'a pas ce pb avec les morts!
+
+

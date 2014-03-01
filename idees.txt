@@ -18,6 +18,16 @@
 	A étoffer	(L'état minimal existe, mais il faut arrondir les angles)
 	Fini		(C'est bon, on passe à autre chose)
 
+
+###------------------------------------------------------###
+### 			  World				 ###
+###======================================================###
+
++++ The Courtyard
++++	Etat:	Non prévu 
+Simplifier la cour en une seule pièce, car près tout ça n'apporte rien.
+
+
 ###------------------------------------------------------###
 ### 			Scénario			 ###
 ###======================================================###

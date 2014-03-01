@@ -267,13 +267,13 @@ The Courtyard - South West is a room in the Courtyard, west of Courtyard - South
 
 The training bow is a bow in The Courtyard - South West. "[If not handled]A bow stands there against the wall. [end if]This bow might be strong enough to send a deadly projectile."
 
-The Courtyard - North West is a room in the Courtyard, north of Courtyard - South West. "You are in the castle's courtyard; in the North West part." East from Courtyard - North West is the Courtyard - North East. Southeast from Courtyard - North West is the Courtyard - South East. West from Courtyard - North West is the Chapel.
+The Courtyard - North West is a room in the Courtyard, north of Courtyard - South West. "You are in the castle's courtyard; in the North West part. There is a door on the north wall witch seems to be the entrance of the tower." East from Courtyard - North West is the Courtyard - North East. Southeast from Courtyard - North West is the Courtyard - South East. West from Courtyard - North West is the Chapel.
 
 The Courtyard - North East is a room in the Courtyard, north of Courtyard - South East. "You are in the castle's courtyard; in the North East part." Southwest from Courtyard - North East is the Courtyard - South West.
 
 Section 3 Lesser Buildings
 
-The Stable is a room. "The room is ill lighted by several small windows, and by the two-part door. The ground is completely covered in . It looks like an old stable."
+The Stable is a room. "The room is ill lighted by several small windows, and by the two-part door. The ground is completely covered in straw and many-years-old manure. It looks like an old stable."
 
 The Chapel is a room. "The Chapel is small, with only six rows of benches. You feel something holy in it."
 There is an altar. The description is "The marble table is clean, and seems to have been used not so long ago." A candle is on the altar.
@@ -288,6 +288,7 @@ After examining the stored tools:
 	remove the stored tools from play.
 
 East from Courtyard - South East is the Stone house. The description of the Stone house is "You are in a small one-piece house"
+[A quoi sert cette piece deja?]
 
 The Ugly House is northeast of the Courtyard - North East. "You are in a small room with a plain dirt floor. The room is poorly lit by a naked light bulb hanging from the ceiling. The only true exit here is a door in the southwest wall."
 The Big Chest is a container. It is fixed in place. It is in the Ugly House.
@@ -312,7 +313,7 @@ There is a kitchen knife on the table.
 The Food Storage Room is east of the Grand Kitchen. "You are in a room full of food and supplies. On shelves are boxes, cans and pots. A braid of garlic hangs from the roof and a long canvas bag is hooked to a nail on the wall."  It is in the Main Keep.
 There is a canvas bag in the Food storage room. There is some bread in the bread bag. There are some shelves in the Food storage room. There is a big bottle of whiskey on the shelves. The shelves and the bag are fixed in place.
 Instead of drinking the whiskey:
-say "You start drinking, and soon you realise you can't stop. Your head is spinnong wildly, and your footing unsure. This clearly was a bit too much for your untrained liver, and you fall to the ground. ALCOHOL : 1, YOU 0.";
+say "You start drinking, and soon you realise you can't stop. Your head is spinnong wildly, and your footing unsure. This clearly was a bit too much for your untrained liver, and you fall to the ground. ALCOHOL - 1, YOU - 0.";
 Move the player to the Improvised cell;
 Move the Mpawn to the Mcell;
 say "The Wicked taste of raki fils your mouth as you wake up. It was realy foolish of you to drink that in a place you don't know."
