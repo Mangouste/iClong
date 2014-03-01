@@ -207,13 +207,16 @@ Chapter 3 Views
 The land view is a backdrop in the Outer Castle. It is not scenery. The initial appearance of the land view is "As far as you can see, the landscape is nothing more than some woods and rocks, stretching miles in every directions. ". The description of the land view is "Time does not seem to make such a view any less dazzling."
 
 Chapter 4 Home
-
+[Elevator]
 The Elevator is a room in the appartment. "[if  unvisited]<Ding!> The lift stops at the 3rd floor. It's your floor, you live at the 303. [end if]You don't want to delay in this elevator and can't wait to set foot in the corridor to the east."
 
+[Corridor-N]
 The Corridor - middle is east of the Elevator. "This dimly lit corridor disappears to the south and leads north to your appartement." It is in the appartment.
 
+[Corridor-S]
 The Corridor - north is north of the corridor middle. "[if unvisited]You want nothing more than to sit on your couch, ad watch the games with a pizza. Wait... what about your romantic weekend? [end if]You can barely read the the number writen in gold on the door to the east. '303' This is the one." It is in the appartment.
 
+[Small Kitchen]
 The Small Kitchen is east of the Corridor - north. "[if unvisited]You close the door behind you. Ah, you are finally home. You take your nicest voice, you say 'Darling, guess who's finished his awful week and is up to anything with you?' As you don't hear any answer, you take a look around, just to be sure you're not in the wrong apartment. A ridiculous phobia you've had forever. The bedroom is south and the living-room, east. [otherwise]The Kitchen, seems familiar, at the most. The door to the west leads to the corridor, to the south is your bedroom and you can see the living room to the east.". It is in the appartment.
 A sink is in the Small Kitchen. "A low cost stainless steel sink." It is fixed in place.
 Some lunch's dishes are in the sink. "This should not be there."
@@ -221,18 +224,23 @@ The small cupboard is a closed openable container. The small cupboard is fixed i
 The small cupboard is in the small kitchen. "The cupboard is in it's usual place up against the wall."
 Before opening the small cupboard: say "As you open it you realise that you were looking for your fiancee, and there is little chances she could be in there."
 
+[Small Bedroom]
 The Small Bedroom is south of the Small Kitchen. "[if unvisited]You enter the bedroom, hoping to find her here. But she’s not here. [end if]The bed is made, and the room undisturbed. You could still try the bathroom, to the east or the kitchen, to the north." It is in Appartment.
 A pink cellphone is in the small bedroom. "[if not handled]On the night table, you notice her cellphone plugged on the main current. This is encouraging, as she seldom goes anywhere without her phone.[else]The pink cellphone reminds you of your beloved one."
 The pink cellphone is a phone.
 The description of the pink cellphone is "[the name of your fiancée]'s cellphone. You could swear it still has her sweet smell."
 
+[Tiny Bathroom]
 The Tiny Bathroom is east of the Small Bedroom. "As usual, you feel uncomfortable in your bathroom. Who wouldn't in a room with all its walls of black tiles? Ok, maybe it's dark dark blue, but still; the last owner must have had a price on an unsold lot. Nobody's here except from ducky, your yellow rubber duck. The only way out of this weird place is west." It is in Appartment. A little rubber duck is in the Tiny Bathroom. "Your bathing partner since you were old enough to bathe on your own. It hardly looks like a grown up duck and the sound that it used to make is now barely more than choking rattle."
 Before taking the rubber duck: say "You just know that it won't be of any help accomplishing anything but there are things you can't resist doing."
 
+[Small Living Room]
 The Small Living Room is east of the Small Kitchen. "[if unvisited]As you get into the living room, you notice that one of your four chairs lay toppled at the side of the table. Something is wrong, you can tell it. Thieves? Are they still here? You sense your muscles tensing as adrenaline flows in your veins. [end if]However familiar the Living room might be, there is still something about it that makes your worst fears creep into your mind. The kitchen is to the west, the toilets are south, and a door leads east to the office." It is in Appartment.
 
+[Tiniest Toilets]
 The Tiniest Toilets are south of the Small Living Room. "No, your queen is not on the throne." It is in Appartment.
 
+[Fiancée's Office]
 The Fiancée's Office is east of the Small Living Room. "[if unvisited]As you push the door, you feel your heart beating hard in your chest. As you feared, your fiancée’s office is a mess. The floor is covered in files and papers, and the office chair lay against the shelves. Being stressed out by the sight of her belongings scattered all around, you look nervously to every corner to be sure the room is clear of any thief, but you’re alone. At this thought, your spirit sinks. You reluctantly resume the examination of the room. [End if]Even if the living room was only slightly disturbed, the office seems to have been the playground of a reasonably sized tornado. Maybe you should take a closer look at that mess..." It is in Appartment.
 There is a mess in the Fiancée's office. It is fixed in place. 
 There is a computer in the Fiancée's Office. It is fixed in place and a device.
@@ -244,40 +252,48 @@ Move the player to the Small Living Room;
 Chapter 5 Castle
 
 Section 1 Drawbridge Tower
-
+[Front of the Castle]
 Front of the castle is a room in the Outer Castle. "You stand here, in front of this imposing castle. [if unvisited]The trip here has exhausted you and you already regret your warm appartment, but you MUST find your finacée."
 
+[Entrance Antechamber]
 The Entrance Antechamber is north of Front of the castle. "You are at the base of the drawbrige tower, the main entrance of the castle. The high-roofed corridor leads north to the courtyard, and stairs ascend to the upper levels." It is in the Drawbridge Tower.
-
+[Narrow door]
 The narrow door is west of the Entrance Antechamber and east of the Guards room. The narrow door is a locked door. The initial appearance is "A narrow wooden door blocks your way to the west." The description is "Solid, heavy, with a rusty keyhole; not much more to say about it."
 
+[Guards Room]
 The Guards Room is a room. "This room must have been home to whoever guarded the drawbridge. You can see a narrow wooden door to the west and narrow stairs winding up."  It is in the Drawbridge Tower.
 
+[Drawbridge Tower - Middle]
 The Drawbridge tower - middle floor is up of the Entrance Antechamber. "There is pretty much nothing here for now. The stairs lead up and down."  It is in the Drawbridge Tower.
 
+[Drawbridge Tower - Top]
 The Top of drawbridge tower is up of the Drawbridge tower - middle floor.  It is in the Outer Castle.
 In the Top of drawbridge tower is a sniping mobster. The sniping mobster is a mobster. The description is "A man in a suit with a sniper rifle." The sniping mobster is wearing a suit and carries a sniper riffle.
 
 Section 2 Courtyard
-
+[Courtyard - SE]
 The Courtyard - South East is a room in the Courtyard and north of Entrance Antechamber. "You are in the castle's courtyard; in the South East part."
 There is a well in the Courtyard - South East. The well is a scenery. The description is "A round stone well, with a pointed roof."
 
+[Courtyard - SW]
 The Courtyard - South West is a room in the Courtyard, west of Courtyard - South East. "You are in the castle's courtyard; in the South West part." South from Courtyard - South West is Entrance Antechamber. West from Courtyard - South West is the Stable.
-
+[Training Bow]
 The training bow is a bow in The Courtyard - South West. "[If not handled]A bow stands there against the wall. [end if]This bow might be strong enough to send a deadly projectile."
 
+[Courtyard - NW]
 The Courtyard - North West is a room in the Courtyard, north of Courtyard - South West. "You are in the castle's courtyard; in the North West part. There is a door on the north wall witch seems to be the entrance of the tower." East from Courtyard - North West is the Courtyard - North East. Southeast from Courtyard - North West is the Courtyard - South East. West from Courtyard - North West is the Chapel.
 
+[Courtyard - NE]
 The Courtyard - North East is a room in the Courtyard, north of Courtyard - South East. "You are in the castle's courtyard; in the North East part." Southwest from Courtyard - North East is the Courtyard - South West.
 
 Section 3 Lesser Buildings
-
+[Stable]
 The Stable is a room. "The room is ill lighted by several small windows, and by the two-part door. The ground is completely covered in straw and many-years-old manure. It looks like an old stable."
 
+[Chapel]
 The Chapel is a room. "The Chapel is small, with only six rows of benches. You feel something holy in it."
 There is an altar. The description is "The marble table is clean, and seems to have been used not so long ago." A candle is on the altar.
-
+[Tools]
 The screw driver, the pincers, the hammer and the rusted sword are things.
 East from Courtyard - North East is the Old workshop. The Old workshop is a room. "You are standing in an old building migth have been a workshop or a warehouse, but now it is only a ruin with a lot of tools and junks stored here."  The stored tools are here. The description is "Examining the tools you found a screw driver, a hammer and, behind some junks, a short rusted sword." The stored tools are fixed in place. The indefinite article of the stored tools is "some".
 After examining the stored tools:
@@ -287,13 +303,15 @@ After examining the stored tools:
 	now the  rusted sword is in the Old workshop;
 	remove the stored tools from play.
 
+[Stone House]
 East from Courtyard - South East is the Stone house. The description of the Stone house is "You are in a small one-piece house"
 [A quoi sert cette piece deja?]
 
+[Ugly House]
 The Ugly House is northeast of the Courtyard - North East. "You are in a small room with a plain dirt floor. The room is poorly lit by a naked light bulb hanging from the ceiling. The only true exit here is a door in the southwest wall."
 The Big Chest is a container. It is fixed in place. It is in the Ugly House.
 The Heavy Cell Door is a door. It is east of the Ugly House and west of the Improvised Cell.
-
+[Rotten Trapdoor]
 The rotten trapdoor is a door. It is down of the Improvised Cell and up of the Little Cache. The rotten trapdoor is scenery.
 The topmost surface is supporter. It is part of the trapdoor.
 The hitchy rug is on the topmost surface.
@@ -303,13 +321,15 @@ The description of the improvised cell is "You find yourself in a small little r
 The description of the heavy cell door is "[if the time in the brink is happening]This door is not only old and heavy, but also rock solid. The the old lock looks a little rusty, but has been oiled recently and seems to hold tight. The anchor points in the walls are not ready to give way. [otherwise] This door looks old but in perfect condition. You wouldn't want to be locked up by this door."
 
 Section 4 Dungeon
-
+[Dungeon Hall]
 The Dungeon Hall is north of Courtyard - North West. "The entrance of the dungeon is a small room, only lit by a slit. You see staircase leading up and two doors; one North and one south." It is in the Main Keep.
 
+[Grand Kitchen]
 North from Dungeon hall is the Grand Kitchen. The Grand Kitchen is a room. "You are in a Grand Kitchen. A fire is crackling softly in a fireplace large anough fo roast a whole pig. There is a Grand Kitchen knife on a table along with some cooking tools. There is a door to the East and another one to the south."  It is in the Main Keep.
 There is a Solid Table in the Grand Kitchen. The Solid Table is scenery. "On the wooden table is a Grand Kitchen knife, along with other cooking tools. A partially tranched cucomber lies here."
 There is a kitchen knife on the table.
 
+[Food Storage Room]
 The Food Storage Room is east of the Grand Kitchen. "You are in a room full of food and supplies. On shelves are boxes, cans and pots. A braid of garlic hangs from the roof and a long canvas bag is hooked to a nail on the wall."  It is in the Main Keep.
 There is a canvas bag in the Food storage room. There is some bread in the bread bag. There are some shelves in the Food storage room. There is a big bottle of whiskey on the shelves. The shelves and the bag are fixed in place.
 Instead of drinking the whiskey:
@@ -318,23 +338,24 @@ Move the player to the Improvised cell;
 Move the Mpawn to the Mcell;
 say "The Wicked taste of raki fils your mouth as you wake up. It was realy foolish of you to drink that in a place you don't know."
 
-
+[Wardrobe]
 The Wardrobe is east of the Dungeon Hall. "The walls of the room were covered in clothes. All of them are men clothes. You can see vests, scarves, and hats hung on the walls but also shoes on ground. Behind a mantle, on the eastern wall, you can see a door."  It is in the Main Keep.
 
-
-
+[Dungeon - 1st Floor]
 The Dungeon 1st floor is up of the Hall. "You are in the dungeon."  It is in the Main Keep.
 
+[Dungeon - 2nd Floor]
 The Dungeon 2nd floor is up of the Dungeon 1st floor. "The walls around you are decorated by dozens of hunting trophies and and the few narrow windows show you more of the castle. It does not look as big from up here, but you still marvel at how hard it would have been to warm it up through the worst of winter. A wire runs up the wall and through the ceiling." It is in the Main Keep.
 A coaxial wire is here. "A coaxial wire runs all the way from the floor to the ceiling against the west wall. [If the coaxial wire is intact] This must be the antena cable for the TV you hear in the living room underneath.[Else] It has been cut." The coaxial wire can be either cut or intact.
 
+[Mobster's Living Room]
 The Mobster's living room is north of the Dungeon 1st floor. "You enter the comfortable living room. You can see the remnants of typical mob's day-to-day activities on the table and heavy tapestries hanging from the walls."
 The TV set is a device in the Mobster's living room. The TV set can be either working or not working. The TV set is working and switched on.
 The TV chatter is a backdrop in the Main Keep. It is not scenery. The initial appearance of the TV chatter is "[if the TV set is working and the tv set is switched on]From where you are, you distincively hear the chatter of the TV. I seems that a soccer game is playing.[else if the TV set is not working and the tv set is switched on]Even from here you can hear the high scritching of the TV with bad reception.[else]". The description of the TV chatter is "description of the chatter."
 The TV chatter is in the Courtyard - North West, the Courtyard - North East, the Dungeon Hall, the Dungeon 1st floor, the Mobster's living room, the stairs in the wall upper part, the Dungeon 2nd floor.
 
 Chapter 6 Underground
-
+[Stairs in the Wall]
 The stairs in the wall upper part is east of the Mobster's living room.
 
 Part 3 Plot
