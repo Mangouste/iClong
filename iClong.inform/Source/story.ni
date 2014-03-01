@@ -207,6 +207,7 @@ Chapter 3 Views
 The land view is a backdrop in the Outer Castle. It is not scenery. The initial appearance of the land view is "As far as you can see, the landscape is nothing more than some woods and rocks, stretching miles in every directions. ". The description of the land view is "Time does not seem to make such a view any less dazzling."
 
 Chapter 4 Home
+
 [Elevator]
 The Elevator is a room in the appartment. "[if  unvisited]<Ding!> The lift stops at the 3rd floor. It's your floor, you live at the 303. [end if]You don't want to delay in this elevator and can't wait to set foot in the corridor to the east."
 
@@ -252,6 +253,7 @@ Move the player to the Small Living Room;
 Chapter 5 Castle
 
 Section 1 Drawbridge Tower
+
 [Front of the Castle]
 Front of the castle is a room in the Outer Castle. "You stand here, in front of this imposing castle. [if unvisited]The trip here has exhausted you and you already regret your warm appartment, but you MUST find your finacée."
 
@@ -271,6 +273,7 @@ The Top of drawbridge tower is up of the Drawbridge tower - middle floor.  It is
 In the Top of drawbridge tower is a sniping mobster. The sniping mobster is a mobster. The description is "A man in a suit with a sniper rifle." The sniping mobster is wearing a suit and carries a sniper riffle.
 
 Section 2 Courtyard
+
 [Courtyard - SE]
 The Courtyard - South East is a room in the Courtyard and north of Entrance Antechamber. "You are in the castle's courtyard; in the South East part."
 There is a well in the Courtyard - South East. The well is a scenery. The description is "A round stone well, with a pointed roof."
@@ -287,6 +290,7 @@ The Courtyard - North West is a room in the Courtyard, north of Courtyard - Sout
 The Courtyard - North East is a room in the Courtyard, north of Courtyard - South East. "You are in the castle's courtyard; in the North East part." Southwest from Courtyard - North East is the Courtyard - South West.
 
 Section 3 Lesser Buildings
+
 [Stable]
 The Stable is a room. "The room is ill lighted by several small windows, and by the two-part door. The ground is completely covered in straw and many-years-old manure. It looks like an old stable."
 
@@ -321,6 +325,7 @@ The description of the improvised cell is "You find yourself in a small little r
 The description of the heavy cell door is "[if the time in the brink is happening]This door is not only old and heavy, but also rock solid. The the old lock looks a little rusty, but has been oiled recently and seems to hold tight. The anchor points in the walls are not ready to give way. [otherwise] This door looks old but in perfect condition. You wouldn't want to be locked up by this door."
 
 Section 4 Dungeon
+
 [Dungeon Hall]
 The Dungeon Hall is north of Courtyard - North West. "The entrance of the dungeon is a small room, only lit by a slit. You see staircase leading up and two doors; one North and one south." It is in the Main Keep.
 
@@ -342,7 +347,7 @@ say "The Wicked taste of raki fils your mouth as you wake up. It was realy fooli
 The Wardrobe is east of the Dungeon Hall. "The walls of the room were covered in clothes. All of them are men clothes. You can see vests, scarves, and hats hung on the walls but also shoes on ground. Behind a mantle, on the eastern wall, you can see a door."  It is in the Main Keep.
 
 [Dungeon - 1st Floor]
-The Dungeon 1st floor is up of the Hall. "You are in the dungeon."  It is in the Main Keep.
+The Dungeon 1st floor is up of the Hall. "The staircase leads up and down. A simple door leads to a living room."  It is in the Main Keep.
 
 [Dungeon - 2nd Floor]
 The Dungeon 2nd floor is up of the Dungeon 1st floor. "The walls around you are decorated by dozens of hunting trophies and and the few narrow windows show you more of the castle. It does not look as big from up here, but you still marvel at how hard it would have been to warm it up through the worst of winter. A wire runs up the wall and through the ceiling." It is in the Main Keep.
@@ -355,8 +360,9 @@ The TV chatter is a backdrop in the Main Keep. It is not scenery. The initial ap
 The TV chatter is in the Courtyard - North West, the Courtyard - North East, the Dungeon Hall, the Dungeon 1st floor, the Mobster's living room, the stairs in the wall upper part, the Dungeon 2nd floor.
 
 Chapter 6 Underground
+
 [Stairs in the Wall]
-The stairs in the wall upper part is east of the Mobster's living room.
+The stairs in the wall upper part is east of the Mobster's living room. 
 
 Part 3 Plot
 
