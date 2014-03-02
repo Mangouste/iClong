@@ -23,6 +23,10 @@ Asking for help is an action out of world.
 Carry out asking for help (this is the help request rule):
 	Say "Some advice:[paragraph break]Welcome to Clong. You can move about in the world using the commands go east, go west, go north, go south, go up, go down, go in, go out (or their abreviation: respectively e, w, n, s, u, d, i, o).[paragraph break]Try examining an object if you want more info about them.[paragraph break]Try typing inventory (or i) to know what you are carrying with you.[paragraph break]If you find yourself in any trouble, you should be able to call a friend for advice with your cellphone."
 
+Chapter 2 Testing
+
+Test Entrance with "e/n/e/s/take pink cellphone/e/take rubber duck/w/n/e/e/x mess" .[gets you to the neighbour conversation]
+Test sniping with "Test Entrance/n/u/u".[takes you to the sniping mobster]
 
 Part 2 World
 
