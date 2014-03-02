@@ -1,4 +1,4 @@
-### Ce fichier est destiné à mettre les idées de puzzle de scénar et de features
+﻿### Ce fichier est destiné à mettre les idées de puzzle de scénar et de features
 ### pour iClong et sera versionné.
 
 ## Ne pas hésiter à le bidouiller, on pourra suivre grâce au versionnement.
@@ -81,8 +81,9 @@ Le joueur peut fabriquer ou assembler des objets
 
 
 +++ Menus
-+++	Etat:	Non prévu 
-Le joueur peut choisir entre quelques options.
++++	Etat:	Validé
+Le joueur peut choisir entre quelques options. Pourra permettre de faciliter
+les interractions dans les différents puzzles. Ca rendra de nombreuses choses plus jouables.
 Cf. Extention d'Emily Short
 <<< Permet "SCENAR: The dying mobster" (entre autres)
 
