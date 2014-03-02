@@ -418,13 +418,13 @@ CC	Next TTD	Discovery
 
 Table of Ed's Castle Messages
 CC	Next TTD	Discovery
-1	3	"-Hey Hellen! How much do you know about Irish castles? -I know a bunch! I was able to recover some of the books [the name of your fiancée] has been working on, so i'll reseach it while ou go..."
+1	3	"-Hey Ellen! How much do you know about Irish castles? -I know a bunch! I was able to recover some of the books [the name of your fiancée] has been working on, so i'll reseach it while ou go..."
 2	4	"-This castle is not known for its passageways. "
 3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
 
 Section 3 Under the World
 
-Under the World is a scene. Under the world begins when play begins.
+Under the World is a scene.[ Under the world begins when play begins.]
 When Under the World begins:
 	now the TTD of Ellen is 1;
 	now the call count of Ellen is 1;
@@ -435,7 +435,7 @@ When Under the World begins:
 
 Table of Ellen's Under the World Messages
 CC	Next TTD	Discovery
-1	3	"You dit it, you found the entrance of a secret passageway. It being at the first floor of the keep and through stairs in the wall is clearly un heard of!!! This is so exciting!!..."
+1	3	"You dit it, you found the entrance of a secret passageway. It being at the first floor of the keep and through stairs in the wall is clearly unheard of!!! This is so exciting!!..."
 2	4	"-This castle is not known for its passageways. "
 3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
 
