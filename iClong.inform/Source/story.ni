@@ -23,6 +23,10 @@ Asking for help is an action out of world.
 Carry out asking for help (this is the help request rule):
 	Say "Some advice:[paragraph break]Welcome to Clong. You can move about in the world using the commands go east, go west, go north, go south, go up, go down, go in, go out (or their abreviation: respectively e, w, n, s, u, d, i, o).[paragraph break]Try examining an object if you want more info about them.[paragraph break]Try typing inventory (or i) to know what you are carrying with you.[paragraph break]If you find yourself in any trouble, you should be able to call a friend for advice with your cellphone."
 
+Chapter 2 Testing
+
+Test Entrance with "e/n/e/s/take pink cellphone/e/take rubber duck/w/n/e/e/x mess" .[gets you to the neighbour conversation]
+Test sniping with "Test Entrance/n/u/u".[takes you to the sniping mobster]
 
 Part 2 World
 
@@ -426,13 +430,13 @@ CC	Next TTD	Discovery
 
 Table of Ed's Castle Messages
 CC	Next TTD	Discovery
-1	3	"-Hey Hellen! How much do you know about Irish castles? -I know a bunch! I was able to recover some of the books [the name of your fiancée] has been working on, so i'll reseach it while ou go..."
+1	3	"-Hey Ellen! How much do you know about Irish castles? -I know a bunch! I was able to recover some of the books [the name of your fiancée] has been working on, so i'll reseach it while ou go..."
 2	4	"-This castle is not known for its passageways. "
 3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
 
 Section 3 Under the World
 
-Under the World is a scene. Under the world begins when play begins.
+Under the World is a scene.[ Under the world begins when play begins.]
 When Under the World begins:
 	now the TTD of Ellen is 1;
 	now the call count of Ellen is 1;
@@ -443,7 +447,7 @@ When Under the World begins:
 
 Table of Ellen's Under the World Messages
 CC	Next TTD	Discovery
-1	3	"You dit it, you found the entrance of a secret passageway. It being at the first floor of the keep and through stairs in the wall is clearly un heard of!!! This is so exciting!!..."
+1	3	"You dit it, you found the entrance of a secret passageway. It being at the first floor of the keep and through stairs in the wall is clearly unheard of!!! This is so exciting!!..."
 2	4	"-This castle is not known for its passageways. "
 3	0	"-I'm still looking... Give me some more time will ya. Plus, you're an architect, you'll figure it out by yourself!"
 
@@ -543,9 +547,16 @@ When Disparition begins:
 	Change the name of your fiancée to a random first name;
 	say "This has been a hard work day, in a hard work week. You had to finish this project before the weekend. As if it wasn't enough, Robertson has been on your back all the time, boring you about next Thursday party you absolutely don't want to attend. But all this is behind you now, and you will enjoy a romantic weekend with [the name of your fiancée], your fiancée.".
 When Irish Castle begins:
-	Say "As you hurry through the door, you run into a man with a baseball bat. You both freeze for a second. Before you can do anything, the man says in relief ‘Oh my God, it’s you! I thought they’d come back!’ It takes you another second to identify the man: your neighbour, Mr VanDoyle, wears a wound dressing on his nose, and has his collectible San Diego’s Padres 1998 baseball bat in his hand. The man tells you all he knows about you fiancée’s kidnapping, ending every sentence by a swear. His story is quite confuse, but you understand that around 1 PM, he heard some noises and cries through the wall, and came to check if everything was okay. But halfway to your door, he ran into three or four guys in suit, speaking with a heavy Irish accent. One of them had your unconscious fiancée on his shoulder. He tried to stop them but was stopped by the sudden, -and quite unpleasant- encounter of a fist with his nose, after which he decided that he wouldn’t be of any help in a local morgue’s drawer and hid in his appartment.[paragraph break]";
+	Say "As you hurry through the door, you run into a man with a baseball bat. You both freeze for a second. Before you can do anything, the man says in relief ‘Oh my God, it’s you! I thought they’d come back!’[paragraph break]";
 	Wait for any key;
-	Say "He eventually stops for a minute, looking a the wall without seeing it, then adds: ‘Before they left, they said that they should head for the castle right away. Oh and I called the police alright... They came, took some fingerprints, and went off, I insisted that they called you but they refused. They must have been corrupted from the start. What are you gonna do?’. 'I'm gonna get her back and I'm gonna make them pay! And I'm going almone.' you add as he seems to be eager to come with you. 'I have nothing to loose and I don't want you to get in more trouble because of it.' 'Take this with you then, it is the least I can do. Good luck!' he says, leaving you his baseball bat and going back to his appartment.";
+	Say " It takes you another second to identify the man: your neighbour, Mr VanDoyle, wears a wound dressing on his nose, and has his collectible San Diego’s Padres 1998 baseball bat in his hand. The man tells you all he knows about you fiancée’s kidnapping, ending every sentence by a swear. His story is quite confuse, but you understand that around 1 PM, he heard some noises and cries through the wall, and came to check if everything was okay. But halfway to your door, he ran into three or four guys in suit, speaking with a heavy Irish accent. One of them had your unconscious fiancée on his shoulder.[paragraph break]";
+	Wait for any key;
+	Say "He tried to stop them but was stopped by the sudden, -and quite unpleasant- encounter of a fist with his nose, after which he decided that he wouldn’t be of any help in a local morgue’s drawer and hid in his appartment.[paragraph break]";
+	Wait for any key;
+	Say "He eventually stops for a minute, looking a the wall without seeing it, then adds: ‘Before they left, they said that they should head for the castle right away. Oh and I called the police alright... They came, took some fingerprints, and went off, I insisted that they called you but they refused. They must have been corrupted from the start. What are you gonna do?’.[paragraph break]";
+	Wait for any key;
+	Say " 'I'm gonna get her back and I'm gonna make them pay! And I'm going almone.' you add as he seems to be eager to come with you. 'I have nothing to loose and I don't want you to get in more trouble because of it.' 'Take this with you then, it is the least I can do. Good luck!' he says, leaving you his baseball bat and going back to his appartment.";
+	Wait for any key;
 	Say "Your investigation leads you to Kableneum Castle, somewhere in Ireland, where you hope to rescue your bride-to-be.";
 	Now the player carries the collectible bat;
 	Move the player to Front of the castle.

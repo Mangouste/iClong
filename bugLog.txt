@@ -1,17 +1,9 @@
-### Ce fichier est destiné à lister les bugs connus, leur
+﻿### Ce fichier est destiné à lister les bugs connus, leur
 ### état, leurs causes, etc.
 
 ###------------------------------------------------------###
 ### 			    BUGS			 ###
 ###======================================================###
-
-+++ Cellphones
-+++	Etat:	A identifier, important
-+++	Où: Sur le toit de la drawbridge tower, mais potentiellement partout.
-Call Ellen twice to get the message about the secret passageway!!!
-+++ Commentaires:
-	Je pense que le pb vient du fait que "Under the World scene" commence
-	dès le début du jeu.
 
 
 
