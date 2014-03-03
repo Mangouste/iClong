@@ -37,7 +37,7 @@ Before examining a person(called the subject): say "[status of the subject]"
 
 Section 2 Fiancée
 
-Your fiancée is a woman.
+Your fiancée is a woman. She is in the Spooky Room.
 A first name is a kind of value. The first names are Margaret, Rosemary, Elisabeth and Jennifer.
 A woman has a first name called name.
 Calling fiancée is an action applying to nothing. Understand "call your finacée" or "call fiancée" as calling fiancée.
@@ -347,7 +347,7 @@ say "The Wicked taste of raki fils your mouth as you wake up. It was realy fooli
 The Wardrobe is east of the Dungeon Hall. "The walls of the room were covered in clothes. All of them are men clothes. You can see vests, scarves, and hats hung on the walls but also shoes on ground. Behind a mantle, on the eastern wall, you can see a door."  It is in the Main Keep.
 
 [Dungeon - 1st Floor]
-The Dungeon 1st floor is up of the Hall. "The staircase leads up and down. A simple door leads to a living room."  It is in the Main Keep.
+The Dungeon 1st floor is up of the Hall. "The staircase leads up and down. A simple door to the north leads to a living room."  It is in the Main Keep.
 
 [Dungeon - 2nd Floor]
 The Dungeon 2nd floor is up of the Dungeon 1st floor. "The walls around you are decorated by dozens of hunting trophies and and the few narrow windows show you more of the castle. It does not look as big from up here, but you still marvel at how hard it would have been to warm it up through the worst of winter. A wire runs up the wall and through the ceiling." It is in the Main Keep.
@@ -361,8 +361,16 @@ The TV chatter is in the Courtyard - North West, the Courtyard - North East, the
 
 Chapter 6 Underground
 
-[Stairs in the Wall]
-The stairs in the wall upper part is east of the Mobster's living room. 
+[Stairs in the Wall-UP]
+The Stairs in the Wall upper part is east of the Mobster's living room. "[if unvisited]The dark stone stairs seem untouched since centuries, but you notice a is a power switch on the wall. You switch it on, and a lightbulb starts blinking, then shades a full light on the staircase. [end if]The flight of stairs leads down."
+Before going down, say "Taking care not to slip on the wet stones, you climb down the spiral staircase."
+
+[Stairs in the Wall-DOWN]
+The Stairs in the Wall lower part is down of the Stairs in the Wall upper part. "[if unvisited]The spiral staircase comes out to a spooky room at east. [otherwise]The flight of stairs leads up, and there is a spooky room to the east."
+
+[The spooky room]
+The Spooky Room is east of the Stairs in the Wall lower part. "As you get out of the staircaise, you ear some muffled sounds. Looking for the source of these moanings, you find [the name of your fiancée] tied up to a chair, and gagged with a rag. You should hurry and take a closer look."
+Instead of examining your fiancée, end the story saying "You find yourself full of bliss and releaved from the weight of anxiety. It is only after untying her, when you finally hold her in your arms, that many questions start filling your head. Why did the mafia kidnapped her? Why is there only so many mobster in this headquarter castle of them? How will you escape and go back to your cosy appartment? Obviously, this adventure is not over yet, but what follows lies in another book of this story..."
 
 Part 3 Plot
 
