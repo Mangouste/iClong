@@ -279,11 +279,11 @@ In the Top of drawbridge tower is a sniping mobster. The sniping mobster is a mo
 Section 2 Courtyard
 
 [Courtyard - SE]
-The Courtyard - South East is a room in the Courtyard and north of Entrance Antechamber. "You are in the castle's courtyard; in the South East part."
-There is a well in the Courtyard - South East. The well is a scenery. The description is "A round stone well, with a pointed roof."
+The Courtyard - South East is a room in the Courtyard and north of Entrance Antechamber. "The courtyard is vast and bare to the exception of a nice looking well. From where you stand, it extends to the west, north-west and north. The entrance of a stone house opens to the east."
+There is a well in the Courtyard - South East. The well is a scenery. The description is "A round stone well, with a pointed roof. You dare not look down for fear of falling to your death, and yet there are other dangers in this castle that you are ready to confront..."
 
 [Courtyard - SW]
-The Courtyard - South West is a room in the Courtyard, west of Courtyard - South East. "You are in the castle's courtyard; in the South West part." South from Courtyard - South West is Entrance Antechamber. West from Courtyard - South West is the Stable.
+The Courtyard - South West is a room in the Courtyard, west of Courtyard - South East. "The silence in this courtyard sends shivers up your spine. From where you stand, it extends to the north, north-east and east. A door to the west leasds to some long abandoned stables." South from Courtyard - South West is Entrance Antechamber. West from Courtyard - South West is the Stable.
 [Training Bow]
 The training bow is a bow in The Courtyard - South West. "[If not handled]A bow stands there against the wall. [end if]This bow might be strong enough to send a deadly projectile."
 
@@ -301,7 +301,8 @@ The Stable is a room. "The room is ill lighted by several small windows, and by 
 [Chapel]
 The Chapel is a room. "The Chapel is small, with only six rows of benches. You feel something holy in it."
 There is an altar. The description is "The marble table is clean, and seems to have been used not so long ago." A candle is on the altar.
-[Tools]
+
+[Old workshop]
 The screw driver, the pincers, the hammer and the rusted sword are things.
 East from Courtyard - North East is the Old workshop. The Old workshop is a room. "You are standing in an old building migth have been a workshop or a warehouse, but now it is only a ruin with a lot of tools and junks stored here."  The stored tools are here. The description is "Examining the tools you found a screw driver, a hammer and, behind some junks, a short rusted sword." The stored tools are fixed in place. The indefinite article of the stored tools is "some".
 After examining the stored tools:
