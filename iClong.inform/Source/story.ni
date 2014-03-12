@@ -27,6 +27,8 @@ Chapter 2 Testing
 
 Test Entrance with "e/n/e/s/take pink cellphone/e/take rubber duck/w/n/e/e/x mess" .[gets you to the neighbour conversation]
 Test sniping with "Test Entrance/n/u/u".[takes you to the sniping mobster]
+Test dungeon with "Test Entrance/n/n/nw/n".[takes you to the dungeon]
+Test wire with "test Entrance/n/n/n/e/x tools/take all/w/w/n/u/u"
 
 Part 2 World
 
@@ -361,13 +363,24 @@ A coaxial wire is here. "A coaxial wire runs all the way from the floor to the c
 [Mobster's Living Room]
 The Mobster's living room is north of the Dungeon 1st floor. "You enter the comfortable living room. You can see the remnants of typical mob's day-to-day activities on the table and heavy tapestries hanging from the walls."
 The TV set is a device in the Mobster's living room. The TV set can be either working or not working. The TV set is working and switched on.
-The TV chatter is a backdrop in the Main Keep. It is not scenery. The initial appearance of the TV chatter is "[if the TV set is working and the tv set is switched on]From where you are, you distincively hear the chatter of the TV. I seems that a soccer game is playing.[else if the TV set is not working and the tv set is switched on]Even from here you can hear the high scritching of the TV with bad reception.[else]". The description of the TV chatter is "description of the chatter."
+The TV chatter is a backdrop in the Main Keep. It is not scenery. The initial appearance of the TV chatter is "[if the TV set is working and the tv set is switched on]From where you are, you distincively hear the chatter of the TV. It seems that a soccer game is playing.[else if the TV set is not working and the tv set is switched on]Even from here you can hear the high scritching of the TV with bad reception.[else]". The description of the TV chatter is "description of the chatter."
 The TV chatter is in the Courtyard - North West, the Courtyard - North East, the Dungeon Hall, the Dungeon 1st floor, the Mobster's living room, the stairs in the wall upper part, the Dungeon 2nd floor.
+Instead of going north when the player is in the Dungeon 1st floor and the lazy mobster is in the Mobster's living room: say "From the doorstep, you can see a mobster in here, watching the game. You know he will notice you as soon as you enter the room."
+The ancient tapestries are in the Mobster's living room. "Heavy, ancient-looking taestries hang against the wall."
+The ancient tapestries can be either hung against the wall or pushed to the side.
+Instead of examining  the ancient tapestries: say "You step back to appreciate the art. The characters in the picture seem to be attending an important meal. Unlike the usual depictions of the Last Supper of christian artists, this doesn't have a central character, but two groups of beople who seem to be exchanging ideas.[paragraph break]";
+	Wait for any key;
+	Say "The old tapestries only show part of the the colors they once diplayed, but the scene has retained the liveliness the artist has once woven into it.[paragraph break]";
+	Wait for any key;
+	Say "Pushed by an inexplicable urge, you reach out and touch it. You get a little startled at feeling, through the thick cloth, the dry thump of your hand on hollow wood.[Paragraph break]As you push the tapestries to the side, you reveal a hidden door in the wall.";
+	Now the ancient tapestries are pushed to the side;
+	If the Ancient tapestries are pushed to the side: now the Stairs in the Wall upper part is east of the Mobster's living room.
+
 
 Chapter 6 Underground
 
 [Stairs in the Wall-UP]
-The Stairs in the Wall upper part is east of the Mobster's living room. "[if unvisited]The dark stone stairs seem untouched since centuries, but you notice a is a power switch on the wall. You switch it on, and a lightbulb starts blinking, then shades a full light on the staircase. [end if]The flight of stairs leads down."
+The Stairs in the Wall upper part is a room. "[if unvisited]The dark stone stairs seem untouched since centuries, but you notice a is a power switch on the wall. You switch it on, and a lightbulb starts blinking, then shades a full light on the staircase. [end if]The flight of stairs leads down."
 Before going down, say "Taking care not to slip on the wet stones, you climb down the spiral staircase."
 
 [Stairs in the Wall-DOWN]
@@ -375,7 +388,7 @@ The Stairs in the Wall lower part is down of the Stairs in the Wall upper part. 
 
 [The spooky room]
 The Spooky Room is east of the Stairs in the Wall lower part. "As you get out of the staircaise, you ear some muffled sounds. Looking for the source of these moanings, you find [the name of your fiancée] tied up to a chair, and gagged with a rag. You should hurry and take a closer look."
-Instead of examining your fiancée, end the story saying "You find yourself full of bliss and releaved from the weight of anxiety. It is only after untying her, when you finally hold her in your arms, that many questions start filling your head. Why did the mafia kidnapped her? Why is there only so many mobster in this headquarter castle of them? How will you escape and go back to your cosy appartment? Obviously, this adventure is not over yet, but what follows lies in another book of this story..."
+Instead of examining your fiancée, end the story saying "You find yourself full of bliss and releaved from the weight of anxiety. It is only after untying her, when you finally hold her in your arms, that many questions start filling your head. Why did the mafia kidnap her? Why is there only so many mobster in this headquarter castle of them? How will you escape and go back to your cosy appartment? Obviously, this adventure is not over yet, but what follows lies in another book of this story..."
 
 Part 3 Plot
 
