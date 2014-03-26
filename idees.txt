@@ -71,6 +71,18 @@ Une épingle à nourisse? Une baleine de soutien-gorge? Un clou rouillé?
 Le joueur utilise l'écho pour attirer les mobs/faire diversion/effrayer
 >>> Nécessite l'implémentation de l'echo
 
++++ The Irish Castle
++++ 	Etat:  En cours
+Comme décrit dans le buglog, le chapitre du Irish Castle a besoin d'un remaniement complet.
+En particulier: 
+-Supression des lieux inutiles
+-Supression des objets inutiles (ils ne font que compliquer le gamplay et perturber la réflexion du joueur
+-Construction d'un puzzle pour l'élimination du sniping mobster
+	-Le joueur refuse d'aller dans le courtyard car il voit l'ombre du SM qui est au sommet de la tour.
+	-Pour éliminer le SM, le joueur peut:
+		-S'approcher par derrière et le pousser dans le vide
+		-Attendre que le SM se mette à pisser du haut du rempart, puis monter et lui prendre son fusil
+
 ###------------------------------------------------------###
 ### 			  Features			 ###
 ###======================================================###

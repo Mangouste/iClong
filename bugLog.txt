@@ -34,3 +34,10 @@ Weird...
 	NB: Y'a pas ce pb avec les morts!
 
 
++++ The Castle scene
++++	Etat:   A identifier, important
++++	Où: dans le Irish Castle.
+Le Irish Castle a été construit sans réel objectif scénarstique ou enigmatique (à part pour le donjon).
+Il est temps de le remanier pour transformer ce "laboratoire" en chapitre du jeu.
+
++++ Propositions: voir dans les idees.txt
